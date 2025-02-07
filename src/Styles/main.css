@@ -37,6 +37,7 @@ body, html {
 }
 
 .sidebar.open {
+    padding-top:100px;
     left: 0;
 }
 
@@ -167,6 +168,8 @@ body, html {
     width: 400px;
     background-color: #ffffff;
     padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;

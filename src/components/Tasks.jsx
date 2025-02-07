@@ -33,9 +33,9 @@ const Tasks = () => {
       </div>
 
       {modalOpen && (
-        <div className="modal-overlay" onClick={closeModal}>
+        <div className="modal-overlay mx-5" onClick={closeModal}>
           <div className="modal" onClick={(e) => e.stopPropagation()}>
-            <input type="text" placeholder="Title" value={task.title} 
+            <input type="text"  placeholder="Title" value={task.title} 
               onChange={(e) => setTask({ ...task, title: e.target.value })} />
             <input type="text" placeholder="Description" value={task.description} 
               onChange={(e) => setTask({ ...task, description: e.target.value })} />
@@ -44,7 +44,7 @@ const Tasks = () => {
               <option>In Progress</option>
               <option>Done</option>
             </select>
-            <button className="add-task-btn"  onClick={addTask}>Add</button>
+            <button className="add-task-btn mx-10"  onClick={addTask}>Add</button>
             <button className="add-task-btn"  onClick={closeModal}>Close</button>
           </div>
         </div>
